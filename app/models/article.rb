@@ -6,7 +6,6 @@ class Article < ApplicationRecord
   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
 
   def tag_list
-    puts "what is the asdf"
     tags.join(", ")
   end
 
